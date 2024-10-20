@@ -62,8 +62,10 @@ d6db0bc66024afcffadc21b9d4aaa29575bd80c5b0be40487b732ae5941966d4
 # 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
 
 Para esto abres el editor de texto de ubuntu y pones "< h1 >Hola Mundo< / h1 >" despues lo nombras "index.html" y lo guardas en la carpeta elegida en el apartado 3.
+
 La comprobación:
 
+![Captura](Captura.PNG)
 
 # 5. Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.
 
@@ -77,6 +79,8 @@ c324867279d714cb9d8225ec3f44bceca3731fc87e0404336dff0436ba443263
 # 6. Comprueba que los dos servidores 'sirven' la misma página.
 
 ![SXE](SXE.PNG)
+
+
 
 
 
