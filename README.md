@@ -90,7 +90,7 @@ Sin Salida
 
 Comprobación de ambos servidores:
 
-
+![SXE](SXE2.PNG)
 
 
 
