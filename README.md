@@ -61,7 +61,7 @@ d6db0bc66024afcffadc21b9d4aaa29575bd80c5b0be40487b732ae5941966d4
 
 # 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
 
-Para esto abres el editor de texto de ubuntu y pones "<h1>Hola Mundo</h1>" despues lo nombras "index.html" y lo guardas en la carpeta elegida en el apartado 3.
+Para esto abres el editor de texto de ubuntu y pones "< h1 >Hola Mundo< / h1 >" despues lo nombras "index.html" y lo guardas en la carpeta elegida en el apartado 3.
 La comprobación se hace poniendo esto en google http://localhost:8000/ donde veas que efectivamente pone Hola Mundo.
 
 
