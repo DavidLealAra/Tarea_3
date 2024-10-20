@@ -40,6 +40,30 @@ Salida:
 
 e4eac173cbab4f92c7cb6738e2dc22bef0e961139e5e50b544960e7536093ffe
 
-   
-             
+# 3. Si quieres poder acceder desde el navegador de tu equipo, ¿que debes hacer?. Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un directorio que tu elijas.
+
+Primero de todo debes borrar los anteriores contenedores con estos dos comandos:
+```bash
+sudo docker stop dam_web1
+sudo docker rm dam_web1
+```
+Salida de ambos:
+ 
+dam_web1
+
+Despues creas uno nuevo con las siguientes modificaciones:
+```bash
+sudo docker run -d --name dam_web1 -p 8000:80 -v ~/mi_directorio_apache:/usr/local/apache2/htdocs/ httpd:2.4
+```
+Salida:
+
+d6db0bc66024afcffadc21b9d4aaa29575bd80c5b0be40487b732ae5941966d4
+
+# 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
+
+Para esto abres el editor de texto de ubuntu y pones "<h1>Hola Mundo</h1>" despues lo nombras "index.html" y lo guardas en la carpeta elegida en el apartado 3.
+La comprobación se hace poniendo esto en google http://localhost:8000/ donde veas que efectivamente pone Hola Mundo.
+
+
+
 
