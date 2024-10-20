@@ -64,6 +64,18 @@ d6db0bc66024afcffadc21b9d4aaa29575bd80c5b0be40487b732ae5941966d4
 Para esto abres el editor de texto de ubuntu y pones "< h1 >Hola Mundo< / h1 >" despues lo nombras "index.html" y lo guardas en la carpeta elegida en el apartado 3.
 La comprobación se hace poniendo esto en google http://localhost:8000/ donde veas que efectivamente pone Hola Mundo.
 
+# 5. Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.
+
+El comando para la creacion del nuevo contendor seria esta:
+```bash
+sudo docker run -d --name dam_web2 -p 9080:80 -v ~/mi_directorio_apache:/usr/local/apache2/htdocs/ httpd:2.4
+```
+Salida:
+c324867279d714cb9d8225ec3f44bceca3731fc87e0404336dff0436ba443263
+
+# 6. Comprueba que los dos servidores 'sirven' la misma página.
+
+
 
 
 
