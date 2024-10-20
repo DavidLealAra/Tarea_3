@@ -1,6 +1,6 @@
 # Tarea_3
 
-# 1. Descarga la imagen 'httpd' y comprueba que está en tu equipo.
+## 1. Descarga la imagen 'httpd' y comprueba que está en tu equipo.
 
 Comando de descarga de la imagen:
 ```bash
@@ -30,7 +30,7 @@ Salida:
 |    httpd    |  2.4  |1bcf11fa154f|3 months ago | 148MB  |
 | hello-world |latest |d2c94e258dcb|17 months ago| 13.3kB |
 
-# 2. Crea un contenedor con el nombre 'dam_web1'.
+## 2. Crea un contenedor con el nombre 'dam_web1'.
 
 Comando de creación de contenedor con el nombre indicado:
 ```bash
@@ -40,7 +40,7 @@ Salida:
 
 e4eac173cbab4f92c7cb6738e2dc22bef0e961139e5e50b544960e7536093ffe
 
-# 3. Si quieres poder acceder desde el navegador de tu equipo, ¿que debes hacer?. Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un directorio que tu elijas.
+## 3. Si quieres poder acceder desde el navegador de tu equipo, ¿que debes hacer?. Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un directorio que tu elijas.
 
 Primero de todo debes borrar los anteriores contenedores con estos dos comandos:
 ```bash
@@ -59,7 +59,7 @@ Salida:
 
 d6db0bc66024afcffadc21b9d4aaa29575bd80c5b0be40487b732ae5941966d4
 
-# 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
+## 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
 
 Para esto abres el editor de texto de ubuntu y pones "< h1 >Hola Mundo< / h1 >" despues lo nombras "index.html" y lo guardas en la carpeta elegida en el apartado 3.
 
@@ -67,7 +67,7 @@ La comprobación:
 
 ![Captura](Captura.PNG)
 
-# 5. Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.
+## 5. Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.
 
 El comando para la creacion del nuevo contendor seria esta:
 ```bash
@@ -76,9 +76,19 @@ sudo docker run -d --name dam_web2 -p 9080:80 -v ~/mi_directorio_apache:/usr/loc
 Salida:
 c324867279d714cb9d8225ec3f44bceca3731fc87e0404336dff0436ba443263
 
-# 6. Comprueba que los dos servidores 'sirven' la misma página.
+## 6. Comprueba que los dos servidores 'sirven' la misma página.
 
 ![SXE](SXE.PNG)
+
+## 7. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
+
+Realizo una modificacion con este comando (aunque se puede manualmente):
+```bash
+sudo echo "<h1>Hola Mundo Modificado</h1>" > ~/mi_directorio_apache/index.html
+```
+Sin Salida
+
+Comprobación de ambos servidores:
 
 
 
